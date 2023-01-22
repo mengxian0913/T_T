@@ -21,8 +21,10 @@ from flask import Flask
 from flask import render_template
 
 app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
+app = Flask(__name__, template_folder='templates')
 
-@app.route('https://mengxian0913.github.io/T_T/')
+@app.route('/')
 def index():
     return render_template('index.html')
 
