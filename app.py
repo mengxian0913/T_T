@@ -22,7 +22,7 @@ from flask import render_template
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('https://mengxian0913.github.io/T_T/')
 def index():
     return render_template('index.html')
 
